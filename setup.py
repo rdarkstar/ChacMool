@@ -21,11 +21,8 @@ setup_info = dict(
     author = emesene.Info.EMESENE_AUTHORS,
     author_email = "luismarianoguerra@gmail.com",
     keywords = "messenger im msn jabber gtalk live facebook",
-    long_description = """emesene is an istant messenger capable of connecting
-    to various networks and utilizing different graphical toolkits.
-    Currently msn and jabber are supported through papyon and SleekXMPP,
-    which allows emesene to connect to various IM services such as
-    Windows Live Messenger, GTalk, Facebook Chat, etc.""",
+    long_description = """ChacMool is an istant messenger capable of connecting
+    to XMPP network utilizing different graphical toolkits.""",
     url = emesene.Info.EMESENE_WEBSITE,
     license = "GNU GPL 3",
     classifiers = [
