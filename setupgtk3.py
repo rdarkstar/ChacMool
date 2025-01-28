@@ -80,8 +80,7 @@ if os.name == "nt":
     #include data files, like images, xml, html files
     for dir in ['e3', 'gui', 'po', 'themes']:
         for dirname, dirnames, files in os.walk(os.path.join(source_path, dir)):
-            if dirname.find("SleekXMPP") == -1 and \
-                dirname.find("papylib\papyon") == -1:
+            if dirname.find("SleekXMPP") == -1:
                 fpath = []
                 for f in files:
                 #ignore pyc, py, .gitignore, .doxygen and lintreport.sh files
@@ -127,7 +126,7 @@ if os.name == "nt":
                 "plistlib", "win32gui", "OpenSSL", "Crypto", "Queue", "sqlite3",
                 "glob", "webbrowser", "json", "imaplib", "cgi", "gzip", "uuid",
                 "platform", "imghdr", "ctypes", "optparse", "plugin_base",
-                "pyfb", "papyon", "e3.xmpp", "unicodedata", 'sleekxmpp']#, "dnspython"]
+                "pyfb", "e3.xmpp", "unicodedata", 'sleekxmpp']#, "dnspython"]
 
     # include gui.common modules manually, i guess py2exe doesn't do that
     # automatically because the imports are made inside some functions
@@ -209,7 +208,6 @@ if os.name == "nt":
     sys.path.insert(0, gtk3_path + '//bin')
     sys.path.insert(0, os.path.join(current_path, 'emesene'))
     sys.path.insert(0, os.path.join(current_path, 'emesene/plugins'))
-    sys.path.insert(0, os.path.join(current_path, 'emesene/e3/papylib/papyon'))
     sys.path.insert(0, os.path.join(current_path, 'emesene/e3/xmpp/SleekXMPP'))
     sys.path.insert(0, os.path.join(current_path, 'emesene/e3/xmpp/pyfb'))
 
